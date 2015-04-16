@@ -26,7 +26,7 @@ public class TipoLogradouro implements Serializable {
     private String descricaoTipoLogradouro;
     
     @OneToMany(mappedBy = "tipoLogradouro", fetch = FetchType.LAZY)
-    @ForeignKey(name = "TipoLogradouro_Endereco")
+    @ForeignKey(name = "TipoLogradouroEndereco")
     private List<Endereco> enderecos;
 
     @Override
